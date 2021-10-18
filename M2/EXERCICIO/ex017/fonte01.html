@@ -7,7 +7,6 @@
     <title>Fontes em CSS</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
             font-family: 'Work Sans', Arial, Helvetica, sans-serif;
             /* Medidas Absolutas
             cm, mm, in, px, pt, pc
@@ -17,8 +16,21 @@
             em, ex, rem, vw, vh, %
             16px geralmente = 1em
             */
-            font-size: 16px ;
             font-size: 1em;
+            /* ligth normal bold bolder */
+        }
+        h1{
+            /* shorthand font
+            - font-style -> font-weigth -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: bolder 2em 'Work Sans';
         }
     </style>
 </head>
